@@ -2,7 +2,7 @@
 *{margin:0;padding:0;}
 
 /*---------- main style ----------*/
-body{background:url(https://lh5.googleusercontent.com/-uiESnG7WtKo/UWG2BmY3NTI/AAAAAAAAAic/AnkmfC0z2eQ/s200/bg.png) repeat;
+body{background:url(http://xcinc.googlecode.com/svn/img/bg.png) repeat;
 font-family:'Merriweather Sans','Lucida Sans Unicode',Arial, sans-serif; font-size:11px}
 a, a:link, a:visited, a;hover, a:active{padding:0; margin:0; text-decoration:none}
 a, a:link, a:visited{color:#FF8C00; text-decoration:none}
@@ -17,7 +17,7 @@ a img{border:none}
 #comments, .status-msg-wrap, #sidebar3, #slider h2{display:none !important}
 
 /* wrapper */
-#out-wrapper{width:950px; height:auto; overflow:hidden; margin:10px auto; padding:0; background:url(https://lh4.googleusercontent.com/-Fk5c8gz9118/UWG2CcVKqWI/AAAAAAAAAiw/BgohTM4cxBk/s32/headbg.png) repeat 0 0; border:1px solid #999; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; -webkit-box-shadow:0 2px 2px  rgba(0,0,0,.5); -moz-box-shadow:0 2px 2px rgba(0,0,0,.5); box-shadow:0 2px 2px  rgba(0,0,0,.5)}
+#out-wrapper{width:950px; height:auto; overflow:hidden; margin:10px auto; padding:0; background:url(http://xcinc.googlecode.com/svn/img/bg2.png) repeat; border:1px solid #999; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px; -webkit-box-shadow:0 2px 2px  rgba(0,0,0,.5); -moz-box-shadow:0 2px 2px rgba(0,0,0,.5); box-shadow:0 2px 2px  rgba(0,0,0,.5)}
 #header{float:left; width:100%; height:auto; padding:10px; margin-bottom:5px; border-radius:3px 3px 0 0; -webkit-border-radius:3px 3px 0 0; -moz-border-radius:3px 3px 0 0; z-index:9999; -webkit-box-shadow:0 2px 2px  rgba(0,0,0,.5); -moz-box-shadow:0 2px 2px rgba(0,0,0,.5); box-shadow:0 2px 2px  rgba(0,0,0,.5); background:#6e6e6e; background: linear-gradient(top,#555,#111); background:-webkit-gradient(linear,left top,left bottom,from(#555),to(#111)); background:-webkit-linear-gradient(top,#555,#111); background:-moz-linear-gradient(top,#555,#111); background:-o-linear-gradient(top,#555,#111); background:-ms-linear-gradient(top,#555,#111); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#555555',endColorstr='#111111')}
 #main{float:left; height:auto; min-height:350px; width:63.7%; padding:0; margin-left:5px; z-index:-9999}
 #sidebar{float:right; height:100%; width:33.5%; padding:0; margin-right:5px; border:3px solid #000; background:#000; opacity:.90; -moz-opacity:.90; filter:alpha(opacity=90);}
@@ -64,7 +64,7 @@ a img{border:none}
 .nav_head:hover, .nav_head.active{background: #64c8ef; background: linear-gradient(top,  #64c8ef 0%,#0590c7 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#64c8ef), color-stop(100%,#0590c7)); background: -webkit-linear-gradient(top,  #64c8ef 0%,#0590c7 100%); background: -moz-linear-gradient(top,  #64c8ef 0%, #0590c7 100%); background: -o-linear-gradient(top,  #64c8ef 0%,#0590c7 100%); background: -ms-linear-gradient(top,  #64c8ef 0%,#0590c7 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64c8ef', endColorstr='#0590c7',GradientType=0)}
 .nav_head.active{border-radius:3px 3px 0 0; -webkit-border-radius:3px 3px 0 0; -moz-border-radius:3px 3px 0 0;}
 .nav_content {padding:5px; background:#fff; margin:-3px 0 3px 0; border:3px solid #0590c7; border-radius:0 0 3px 3px; -webkit-border-radius:0 0 3px 3px; -moz-border-radius:0 0 3px 3px}
-.nav_content li, .iframe li, .post ul li, .post ol li, .tab_content li{list-style:none; background:url(https://lh3.googleusercontent.com/-WqXYiqEzrLw/UWG2CWhKAnI/AAAAAAAAAi0/xgrgLNHDgAo/s6/list_bg.png) no-repeat 0 50%; 
+.nav_content li, .iframe li, .post ul li, .post ol li, .tab_content li{list-style:none; background:url(http://xcinc.googlecode.com/svn/img/list_bg.png) no-repeat 0 50%; 
  padding:3px 0 3px 10px; margin:0; border-bottom:1px dotted #ccc}
 
 /* Footer */
@@ -88,7 +88,7 @@ a img{border:none}
 
 /*---------- widget style ----------*/
 /* slider */
-#s3slider {background:url(https://lh3.googleusercontent.com/-hFltEwNcWnU/UWG2DEc_KaI/AAAAAAAAAjI/s5k_8m7qLj0/s31/loader.gif) no-repeat 50% 50% #fff; border:3px solid #222; height:350px; width:100%; margin:0; overflow:hidden; position:relative; text-shadow:0 1px 0 #000000}
+#s3slider {background:url(http://xcinc.googlecode.com/svn/img/loads.gif) no-repeat 50% 50% #fff; border:3px solid #222; height:350px; width:100%; margin:0; overflow:hidden; position:relative; text-shadow:0 1px 0 #000000}
 #s3sliderContent {background:none repeat scroll 0 0 #fff; list-style:none outside none; margin-left:0; overflow:hidden; padding:0; 
 position:absolute; top:0px}
 .s3sliderImage {float:left; position:relative; width:100%;}
