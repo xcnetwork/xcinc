@@ -27,11 +27,10 @@
  cursor: pointer; z-index: 8060;}
 #fancybox-loading div {width: 44px; height: 44px; 
  background:url(https://lh6.googleusercontent.com/-MYfCBMo5WwU/UWG2DzDdlSI/AAAAAAAAAjg/0Ih7o1dHY5U/s24/pageload.gif) center center no-repeat;}
-.fancybox-close {background:url(https://lh6.googleusercontent.com/-IVhHIyIuMeY/UWmtg3Pm_JI/AAAAAAAAAlI/GiIA9FNLJlY/s18-no/close.png) #0590c7 no-repeat; position:absolute; 
+.fancybox-close {background:url(http://xcinc.googlecode.com/svn/img/close.png) #0590c7 no-repeat; position:absolute; 
  top:7px; right:5px; width:18px; height:18px; cursor: pointer; z-index: 8040; display:block}
-.fancybox-close:hover{background:url(https://lh5.googleusercontent.com/-QmN9P3nui6E/UWmtg5hx-qI/AAAAAAAAAlM/LtYgGg4O55c/s18-no/close_hover.png) no-repeat; position:absolute;}
-.fancybox-nav {position: absolute; top: 0; width: 40%; height: 100%; cursor: pointer; text-decoration: none; 
- background: transparent url(https://lh5.googleusercontent.com/-DZatIx-5fNc/UWG2BvhxIEI/AAAAAAAAAik/MJYN9K9TEQU/w469-h468-p-o/blank.gif);
+.fancybox-close:hover{background:url(http://xcinc.googlecode.com/svn/img/close_h.png) no-repeat; position:absolute;}
+.fancybox-nav {position: absolute; top: 0; width: 40%; height: 100%; cursor: pointer; text-decoration: none; background:#000; opacity:.50; -moz-opacity:.50; filter:alpha(opacity=50)
  -webkit-tap-highlight-color: rgba(0,0,0,0); z-index: 8040;}
 .fancybox-prev {left: 0;}
 .fancybox-next {right: 0;}
