@@ -30,7 +30,7 @@ function tinyCarouselGallery(json) {
 			date_c = date.split('-')[0];
 		document.write('<li><div class="inner"><a href="' + link + '"' + (slideOpenNewTab ? ' target="_blank"' : '') + '><img src="http://xcinc.googlecode.com/svn/img/promo.png" id="promo"/><img src="' + img + '" alt="' + title + '" class="recent-thumb"></a><h6><a href="' + link + '"' + (slideOpenNewTab ? ' target="_blank"' : '') + '>' + title + '</a></h6><p>' + summ + '</p></div>' + (showPostDate_g ? '<em>' + date_a + ' ' + months[parseInt(date_b, 10)-1] + ' ' + date_c + '</em>' : '') + (showComm_g ? '<em>' + cm + ' ' + text + '</em>' : '') + '</li>');
 	}
-    document.write('</ul></div><div id="tinyarrow"><a class="buttons prev" href="#">' + tinyprevNav + '</a><a class="buttons next" href="#">' + tinynextNav + '</a><span>' + showText + ' ' + postText + '</span></div></div>');
+    document.write('</ul></div><div id="tinyarrow"><a class="buttons prev" href="#">' + tinyprevNav + '</a><a class="buttons next" href="#">' + tinynextNav + '</a><span>' + showText + '</span></div></div>');
 }
 
 document.write("<scr" + "ipt type='text/javascript' src='" + home_page.replace(/\/$/,"") + "/feeds/posts/summary/" + (slidebyLabels ? '-/' + slideLabelName : '') + "?max-results=" + numposts_g + "&orderby=published&alt=json-in-script&callback=tinyCarouselGallery'><\/scr" + "ipt>");
