@@ -35,6 +35,8 @@
         });
         //BASE IMAGE
         var img = $("img:eq(0)", el);
+        el.title = $(el).attr('alt');
+        el.imagetitle = img.attr('alt');
         var zoomtitle = ($.trim(el.title).length > 0) ? el.title : el.imagetitle;
         var smallimage = new Smallimage(img);
         var lens = new Lens();
@@ -105,6 +107,8 @@
                     });
                 }
                 $(".zoomPad", el).bind('mouseenter mouseover', function (event) {
+                    img.attr('alt', '');
+                    $(el).attr('alt', '');
                     el.zoom_active = true;
                     //if loaded then activate else load large image
                     smallimage.fetchdata();
@@ -188,8 +192,8 @@
                     //nothing or lens.setcenter();
                     break;
                 default:
-                    img.attr('title', el.imagetitle);
-                    $(el).attr('title', el.title);
+                    img.attr('alt', el.imagetitle);
+                    $(el).attr('alt', el.title);
                     if (settings.alwaysOn) {
                         lens.setcenter();
                     } else {
