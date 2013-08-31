@@ -2,7 +2,7 @@
 // Visit: http://hompimpaalaihumgambreng.blogspot.com
 
 function tinyCarouselGallery(json) {
-	document.write('<div id="tinycarousel"><img src="http://4.bp.blogspot.com/-T1K0fQGXHn8/T0pmUCTEjEI/AAAAAAAACN8/zJ1CEvvEzLo/s1600/new-ribbon.png" id="ribbon" /><div class="viewport"><ul class="overview">');
+	document.write('<div id="tinycarousel"><div class="viewport"><img src="http://4.bp.blogspot.com/-T1K0fQGXHn8/T0pmUCTEjEI/AAAAAAAACN8/zJ1CEvvEzLo/s1600/new-ribbon.png" id="ribbon" /><ul class="overview">');
 	for (var i = 0; i < numposts_g; i++) {
 		var entry = json.feed.entry[i],
 			title = entry.title.$t,
