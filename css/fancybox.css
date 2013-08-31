@@ -10,10 +10,9 @@
 .fancybox-nav span,
 .fancybox-tmp{padding: 0; margin: 0; border: 0;	outline: none; vertical-align: top}
 .fancybox-wrap {position: absolute;  top: 0;	left: 0; z-index: 8020}
-.fancybox-skin {position: relative;  background: #f9f9f9; color: #444; text-shadow: none; border:3px solid #d60303;
- border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;}.fancybox-opened {z-index: 8030;}
-.fancybox-opened .fancybox-skin {
- box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5)}
+.fancybox-skin {position: relative;  background: #f9f9f9; color: #444; text-shadow: none; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;}
+.fancybox-opened {z-index: 8030;}
+.fancybox-opened .fancybox-skin {box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5)}
 .fancybox-outer, .fancybox-inner {position: relative;}
 .fancybox-inner {overflow: hidden;}
 .fancybox-type-iframe .fancybox-inner {-webkit-overflow-scrolling: touch;}
