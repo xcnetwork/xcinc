@@ -1,5 +1,4 @@
-// Auto content for TinyCarousel by Taufik Nurrohman
-// Visit: http://hompimpaalaihumgambreng.blogspot.com
+// auto slider carousel custom
 
 function tinyCarouselGallery(json) {
   document.write('<div id="tinycarousel"><div class="viewport"><ul class="overview">');
