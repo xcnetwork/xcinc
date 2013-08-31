@@ -35,8 +35,6 @@
         });
         //BASE IMAGE
         var img = $("img:eq(0)", el);
-        el.title = $(el).attr('alt');
-        el.imagetitle = img.attr('alt');
         var zoomtitle = ($.trim(el.title).length > 0) ? el.title : el.imagetitle;
         var smallimage = new Smallimage(img);
         var lens = new Lens();
