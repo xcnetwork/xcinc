@@ -107,8 +107,6 @@
                     });
                 }
                 $(".zoomPad", el).bind('mouseenter mouseover', function (event) {
-                    img.attr('alt', '');
-                    $(el).attr('alt', '');
                     el.zoom_active = true;
                     //if loaded then activate else load large image
                     smallimage.fetchdata();
