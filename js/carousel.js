@@ -1,7 +1,17 @@
 // auto slider carousel custom
 
+var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+var date = new Date();
+var day = date.getDate();
+var month = date.getMonth();
+var thisDay = date.getDay(),
+    thisDay = myDays[thisDay];
+var yy = date.getYear();
+var year = (yy < 1000) ? yy + 1900 : yy;
+
 function tinyCarouselGallery(json) {
-	document.write('<div id="tinycarousel"><div id="tinyarrow"><a href="#"><img class="buttons prev" src="' + prevNav + '"/></a><a href="#"><img class="buttons next" src="' + nextNav + '"/></a><span>' + showText + '</span></div><div class="viewport"><ul class="overview">');
+	document.write('<div id="tinycarousel"><div id="tinyarrow"><a href="#"><img class="buttons prev" src="' + prevNav + '"/></a><a href="#"><img class="buttons next" src="' + nextNav + '"/></a><span>' + showText + ' ' + thisDay + ', ' + day + ' ' + months[month] + ' ' + year +'</span></div><div class="viewport"><ul class="overview">');
 	for (var i = 0; i < numposts_g; i++) {
 		var entry = json.feed.entry[i],
 			title = entry.title.$t,
