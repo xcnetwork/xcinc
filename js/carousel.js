@@ -1,7 +1,7 @@
 // auto slider carousel custom
 
 function tinyCarouselGallery(json) {
-	document.write('<div id="tinycarousel"><div id="tinyarrow"><a href="#"><img class="buttons prev" src="' + prevNav + '"/></a><a href="#"><img class="buttons next" src="' + nextNav + '"/></a><span>' + showText + ' <scr" + "ipt type='text/javascript'>'+show_hari();+'<\/scr" + "ipt></span></div><div class="viewport"><ul class="overview">');
+	document.write('<div id="tinycarousel"><div id="tinyarrow"><a href="#"><img class="buttons prev" src="'+ prevNav +'"/></a><a href="#"><img class="buttons next" src="'+ nextNav +'"/></a><span>'+ showText +' '+ days +'</span></div><div class="viewport"><ul class="overview">');
 	for (var i = 0; i < numposts_g; i++) {
 		var entry = json.feed.entry[i],
 			title = entry.title.$t,
