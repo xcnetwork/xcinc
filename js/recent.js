@@ -66,7 +66,6 @@ function showrecentposts(json) {
 
 			if ("media$thumbnail" in entry[i]) {
 				postimg = entry[i].media$thumbnail.url;
-				postimg = postimg.replace("/s72-c/","/s"+img_sz+"-c/");
 			} else {
 				postimg = pBlank;
 			}
@@ -75,7 +74,7 @@ function showrecentposts(json) {
 	}
 }
 
-document.write('<div id="mini-gallery"><h2>' + rpTitle + '</h2><sc' + 'ript src="/feeds/posts/default/-/'+ label +'?max-results=' + numposts + '&orderby=published&alt=json-in-script&callback=showrecentposts"></sc' + 'ript><div style="clear:both;"></div></div>');
+document.write('<div id="mini-gallery"><h2>' + rpTitle + '</h2><sc' + 'ript src="' + blogURL + '/feeds/posts/summary?max-results=' + numposts + '&orderby=published&alt=json-in-script&callback=showrecentposts"></sc' + 'ript><div style="clear:both;"></div></div>');
 
 $(window).load(function() {
 	$('.rp-item img').each(function(i) {
