@@ -1,21 +1,7 @@
 // auto slider carousel custom
 
-function hari()
-{
-var NamaHari = new Array("Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat",
-"Sabtu");
-var NamaBulan = new Array("Januari", "Februari", "Maret", "April", "Mei",
-"Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember");
-var sekarang = new Date();
-var HariIni = NamaHari[sekarang.getDay()];
-var BulanIni = NamaBulan[sekarang.getMonth()];
-var tglSekarang = sekarang.getDate();
-var TahunIni = sekarang.getFullYear();
-document.write(HariIni + ", " + tglSekarang + " " + BulanIni + " " + TahunIni);
-}
-
 function tinyCarouselGallery(json) {
-	document.write('<div id="tinycarousel"><div id="tinyarrow"><a href="#"><img class="buttons prev" src="'+ prevNav +'"/></a><a href="#"><img class="buttons next" src="'+ nextNav +'"/></a><span>'+ showText +' <script type='text/javascript'>'+ days +'();</script></span></div><div class="viewport"><ul class="overview">');
+	document.write('<div id="tinycarousel"><div id="tinyarrow"><a href="#"><img class="buttons prev" src="'+ prevNav +'"/></a><a href="#"><img class="buttons next" src="'+ nextNav +'"/></a><span>'+ showText +'</span></div><div class="viewport"><ul class="overview">');
 	for (var i = 0; i < numposts_g; i++) {
 		var entry = json.feed.entry[i],
 			title = entry.title.$t,
