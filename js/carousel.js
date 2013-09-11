@@ -34,4 +34,4 @@ document.write('<li><div class="inner"><a href="' + link + '"' + (slideOpenNewTa
 document.write('</ul></div></div>');
 }
 
-document.write("<scr" + "ipt type='text/javascript' src='" + home_page.replace(/\/$/,"") + "/feeds/posts/summary/" + (byLabels ? '-/' + LabelName : '') + "?max-results=" + numposts_g + "&orderby=published&alt=json-in-script&callback=tinyCarouselGallery'><\/scr" + "ipt>");
+document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/summary/" + (byLabels ? '-/' + LabelName : '') + "?max-results=" + numposts_g + "&orderby=published&alt=json-in-script&callback=tinyCarouselGallery'><\/scr" + "ipt>");
