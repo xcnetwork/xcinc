@@ -1,12 +1,10 @@
 function RecentPostThumbnail(json) {
 // ul class
-document.write('<ul class="rc_thumb">'); for (var i = 0; i < numposts; i++) 
+document.write('<ul class="rc_thumb">'); 
 
-{
-	var entry = json.feed.entry[i];var posttitle = entry.title.$t;var posturl;if (i == json.feed.entry.length) break;for (var k = 0; k < entry.link.length;k++){
+for (var i = 0; i < numposts; i++) {var entry = json.feed.entry[i];var posttitle = entry.title.$t;var posturl;if (i == json.feed.entry.length) break;for (var k = 0; k < entry.link.length;k++){
 if(entry.link[k].rel=='replies'&&entry.link[k].type=='text/html'){var commenttext=entry.link[k].title;var commenturl=entry.link[k].href;}
 if (entry.link[k].rel == 'alternate') {posturl = entry.link[k].href;break;}
-}
 
 var thumburl;
 try {thumburl=entry.media$thumbnail.url; 
@@ -21,7 +19,6 @@ if(postthumbnails==true)
 document.write('<li><a href="'+posturl+'"><img src="'+thumburl+'"/></a>');
 // post summary
 document.write('<div class="rc_sum">'+postsummary+'');
-
     if ("content" in entry) {
       var postcontent = entry.content.$t;}
     else
@@ -34,16 +31,12 @@ document.write('<div class="rc_sum">'+postsummary+'');
 if (postsummary == true) {
 
       if (postcontent.length < numchars) {
-          document.write('<i>');
-         document.write(postcontent);
-          document.write('</i>');}
+         document.write(postcontent);}
       else {
-          document.write('<i>');
          postcontent = postcontent.substring(0, numchars);
          var quoteEnd = postcontent.lastIndexOf(" ");
          postcontent = postcontent.substring(0,quoteEnd);
-         document.write(postcontent + '...');
-          document.write('</i>');}
+         document.write(postcontent + '...');}
 } 
 
 document.write('</div>'); // end post summary
