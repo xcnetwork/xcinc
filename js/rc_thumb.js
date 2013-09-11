@@ -9,9 +9,9 @@ if (entry.link[k].rel == 'alternate') {posturl = entry.link[k].href;break;}
 }
 
 var thumburl;
-try {thumburl=entry.media$thumbnail.url;}
+try {thumburl=entry.media$thumbnail.url; 
+     thumburl = thumburl.replace("/s72-c/","/s"+img_sz+"-c/");}
 catch (error)
-thumburl = thumburl.replace("/s72-c/","/s"+img_sz+"-c/");
 
 {
 	s=entry.content.$t;a=s.indexOf("<img");b=s.indexOf("src=\"",a);c=s.indexOf("\"",b+5);d=s.substr(b+5,c-b-5);if((a!=-1)&&(b!=-1)&&(c!=-1)&&(d!=""))
@@ -20,7 +20,7 @@ thumburl = thumburl.replace("/s72-c/","/s"+img_sz+"-c/");
 if(postthumbnails==true) 
 document.write('<li><a href="'+posturl+'"><img src="'+thumburl+'"/></a>');
 // post summary
-document.write('<div class="rc_sum"><h3>'+posttitle+'</h3>');
+document.write('<div class="rc_sum">'+postsummary+'');
 
     if ("content" in entry) {
       var postcontent = entry.content.$t;}
