@@ -18,7 +18,7 @@ catch (error)
 if(postthumbnails==true) 
 document.write('<li><a href="'+posturl+'"><img src="'+thumburl+'"/></a>');
 // post summary
-document.write('<div class="rc_sum">'+postsummary+'');
+document.write('<div class="rc_sum">');
     if ("content" in entry) {
       var postcontent = entry.content.$t;}
     else
@@ -43,4 +43,4 @@ document.write('</div>'); // end post summary
 document.write('</li></ul>');
 } // end ul class
 
-document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/summary/" + (byLabels ? '-/' + LabelName : '') + "?max-results=" + numposts + "&orderby=published&alt=json-in-script&callback=RecentPostThumbnail'><\/scr" + "ipt>");
+document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/default/" + (byLabels ? '-/' + LabelName : '') + "?max-results=" + numposts + "&orderby=published&alt=json-in-script&callback=RecentPostThumbnail'><\/scr" + "ipt>");
