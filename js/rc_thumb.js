@@ -12,4 +12,4 @@ if(i!=(numposts-1))
 document.write('');}
 document.write('</div>');}
 
-document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/summary/" + (byLabels ? '-/' + LabelName : '') + "?max-results="+ numposts+ "&orderby=published&alt=json-in-script&callback=labelthumbs'><\/scr" + "ipt>");
+document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/default/" + (byLabels ? '-/' + LabelName : '') + "?max-results="+ numposts+ "&orderby=published&alt=json-in-script&callback=labelthumbs'><\/scr" + "ipt>");
