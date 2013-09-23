@@ -1,7 +1,7 @@
 // auto slider carousel custom
 
-function tinyCarouselGallery(json) {
-document.write('<div id="tinycarousel"><div class="viewport"><ul class="overview">');
+function RecentByLabel(json) {
+document.write('<div id="rc_label"><div class="viewport"><ul class="overview">');
         for (var i = 0; i < numposts; i++) {
                 var entry = json.feed.entry[i],
                         title = entry.title.$t,
@@ -23,17 +23,13 @@ document.write('<div id="tinycarousel"><div class="viewport"><ul class="overview
                 summ = ("summary" in entry) ? entry.summary.$t.replace(/<(.*)?>/g, "") : "";
                 summ = (summ.length > numchars) ? summ.substring(0, numchars) + '&hellip;' : summ;
                 img = ('media$thumbnail' in entry) ? entry.media$thumbnail.url : pBlank;
-                img = img.replace(/\/s[0-9]+(\-c)?\//, "/s230-c/");
-                months = (idMode) ? ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'] : ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-                var date_a = date.split('-')[2].substring(0, 2),
-                    date_b = date.split('-')[1],
-                    date_c = date.split('-')[0];
+                img = img.replace(/\/s[0-9]+(\-c)?\//, "/s'+img_sz+'-c/");
                                         
-document.write('<li><div class="inner"><a href="' + link + '"><img src="' + img + '" alt="' + title + '" class="recent-thumb"></a><h3><a href="' + link + '">' + title + '</a></h3><p>' + summ + '</p></div>' + (showDate ? '<em>' + date_a + ' ' + months[parseInt(date_b, 10)-1] + ' ' + date_c + '</em>' : '') + (showComm ? '<em>' + cm + ' ' + text + '</em>' : '') + '</li>');
+document.write('<li><div class="inner"><a href="' + link + '"><img src="' + img + '" alt="' + title + '" class="recent-thumb"></a><h3><a href="' + link + '">' + title + '</a></h3><p>' + summ + '</p></div></li>');
         }
 document.write('</ul></div></div>');
 }
 
-document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/summary/" + (byLabels ? '-/' + LabelName : '') + "?max-results=" + numposts + "&orderby=published&alt=json-in-script&callback=tinyCarouselGallery'><\/scr" + "ipt>");
+document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/summary/" + (byLabels ? '-/' + LabelName : '') + "?max-results=" + numposts + "&orderby=published&alt=json-in-script&callback=RecentByLabel'><\/scr" + "ipt>");
 
 
