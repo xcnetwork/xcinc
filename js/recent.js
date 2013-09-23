@@ -23,9 +23,9 @@ document.write('<div id="rc_label"><div class="viewport"><ul class="overview">')
                 summ = ("summary" in entry) ? entry.summary.$t.replace(/<(.*)?>/g, "") : "";
                 summ = (summ.length > numchars) ? summ.substring(0, numchars) + '&hellip;' : summ;
                 img = ('media$thumbnail' in entry) ? entry.media$thumbnail.url : pBlank;
-                img = img.replace(/\/s[0-9]+(\-c)?\//, "/s'+img_sz+'-c/");
+                img = img.replace(/\/s[0-9]+(\-c)?\//, "/s"+img_sz+"-c/");
                                         
-document.write('<li><div class="inner"><a href="' + link + '"><img src="' + img + '" alt="' + title + '" class="recent-thumb"></a><h3><a href="' + link + '">' + title + '</a></h3><p>' + summ + '</p></div></li>');
+document.write('<li><a href="' + link + '"><img src="' + img + '" alt="' + title + '" class="recent-thumb"></a><h3><a href="' + link + '">' + title + '</a></h3><p>' + summ + '</p></li>');
         }
 document.write('</ul></div></div>');
 }
