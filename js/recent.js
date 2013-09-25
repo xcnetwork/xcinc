@@ -1,7 +1,7 @@
 // auto slider carousel custom
 
 function RecentByLabel(json) {
-document.write('<div id="rc_label"><div class="viewport"><ul class="overview">');
+document.write('<div id="rc_label"><div class="viewport">');
         for (var i = 0; i < numposts; i++) {
                 var entry = json.feed.entry[i],
                         title = entry.title.$t,
@@ -25,9 +25,9 @@ document.write('<div id="rc_label"><div class="viewport"><ul class="overview">')
                 img = ('media$thumbnail' in entry) ? entry.media$thumbnail.url : pBlank;
                 img = img.replace(/\/s[0-9]+(\-c)?\//, "/s"+img_sz+"-c/");
                                         
-document.write('<li><a href="' + link + '"><img src="' + img + '" alt="' + title + '" class="recent-thumb"></a><h3><a href="' + link + '">' + title + '</a></h3><p>' + summ + '</p></li>');
+document.write('<a href="' + link + '"><img src="' + img + '" alt="' + title + '" class="recent-thumb"></a><h3><a href="' + link + '">' + title + '</a></h3><p>' + summ + '</p>');
         }
-document.write('</ul></div></div>');
+document.write('</div></div>');
 }
 
 document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/summary/" + (byLabels ? '-/' + LabelName : '') + "?max-results=" + numposts + "&orderby=published&alt=json-in-script&callback=RecentByLabel'><\/scr" + "ipt>");
