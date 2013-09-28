@@ -1,7 +1,7 @@
 // auto slider carousel custom
 
 function RecentThumbnail(json) {
-document.write('<div id="rc_label"><div class="rc_head"><h2>'+ judul +'</h2>selengkapnya</div><div class="viewport"><ul>');
+document.write('<div id="rc_label"><div class="rc_head"><h2>'+ judul +'</h2>'selengkapnya'</div><div class="viewport"><ul>');
         for (var i = 0; i < numposts; i++) {
                 var entry = json.feed.entry[i],
                         title = entry.title.$t,
