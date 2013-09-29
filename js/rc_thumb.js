@@ -5,7 +5,7 @@ document.write('<div id="rc_label"><div class="rc_head"><h1>'+ LabelName +'</h1>
         for (var i = 0; i < numposts; i++) {
                 var entry = json.feed.entry[i],
                         title = entry.title.$t,
-                        date = entry.published.$t,
+                        price = $('.harga').get(),
                         link, summ, months, cm, img;
                 if (i == entry.length) break;
                 for (var j = 0, jen = entry.link.length; j < jen; j++) {
@@ -25,7 +25,7 @@ document.write('<div id="rc_label"><div class="rc_head"><h1>'+ LabelName +'</h1>
                 img = ('media$thumbnail' in entry) ? entry.media$thumbnail.url : 'http://xcinc.googlecode.com/svn/img/noimage.png';
                 img = img.replace(/\/s[0-9]+(\-c)?\//, "/s"+img_sz+"-c/");
                                         
-document.write('<li><h3><a href="'+ link +'">'+ title +'</a></h3><a href="' + link + '"><img src="'+ img +'" title="'+ title +'"></a><p>'+ summ +'</p></li>');
+document.write('<li><h3><a href="'+ link +'">'+ title +'</a></h3><a href="' + link + '"><img src="'+ img +'" title="'+ title +'"></a>'+ price +'<p>'+ summ +'</p></li>');
         }
 document.write('</ul></div></div>');
 }
