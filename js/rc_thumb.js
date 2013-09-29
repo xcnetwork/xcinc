@@ -5,7 +5,7 @@ document.write('<div id="rc_label"><div class="rc_head"><h1>'+ LabelName +'</h1>
         for (var i = 0; i < numposts; i++) {
                 var entry = json.feed.entry[i],
                         title = entry.title.$t,
-                        price = $('.harga').get(),
+                        price = document.getElementsByClassName('harga').get(),
                         link, summ, months, cm, img;
                 if (i == entry.length) break;
                 for (var j = 0, jen = entry.link.length; j < jen; j++) {
