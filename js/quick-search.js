@@ -35,7 +35,7 @@ function showResult(json) {
 			summary = summary.substring(0, config.summaryLength) + '...';
 		}
 		summary = summary.replace(mark, "<mark>"+input.value+"</mark>");
-		skeleton += '<li><img style="width:'+config.thumbSize+'px;height:'+config.thumbSize+'px;" src="'+img+'" alt="" /><a href="'+url+'" target="_blank">'+title+'</a>'+summary+'</li>';
+		skeleton += '<li><img style="width:'+config.thumbSize+'px;height:'+config.thumbSize+'px;" src="'+img+'" alt="" /><a href="'+url+'">'+title+'</a>'+summary+'</li>';
 	}
 	skeleton += '</ol>';
 	resultContainer.innerHTML = skeleton;
