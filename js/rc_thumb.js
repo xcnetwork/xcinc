@@ -1,4 +1,4 @@
-// auto slider carousel custom
+// Recent Post Thumbnail
 
 function RecentThumbnail(json) {
 document.write('<div id="rc_label"><div class="rc_head"><h1>'+ LabelName +'</h1><span class="more_link"><a href="search/label/'+ LabelName +'?&amp;max-results=8">'+ LabelName +' '+ more +'</a></span></div><div class="viewport"><ul>');
@@ -24,7 +24,7 @@ document.write('<div id="rc_label"><div class="rc_head"><h1>'+ LabelName +'</h1>
                 img = ('media$thumbnail' in entry) ? entry.media$thumbnail.url : 'http://xcinc.googlecode.com/svn/img/noimage.png';
                 img = img.replace(/\/s[0-9]+(\-c)?\//, "/s"+img_sz+"-c/");
                                         
-document.write('<li><h3><a href="'+ link +'">'+ title +'</a></h3><a href="' + link + '"><img src="'+ img +'" title="'+ title +'"></a><p>'+ summ +'</p></li>');
+document.write('<li><h3><a href="'+ link +'">'+ title +'</a></h3><a href="' + link + '"><img src="'+ img +'"></a><p>'+ summ +'</p></li>');
         }
 document.write('</ul></div></div>');
 }
