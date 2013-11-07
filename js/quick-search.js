@@ -60,7 +60,7 @@ function updateScript() {
 		val = input.value;
 	newScript.id = "search-feed-script";
 	newScript.type = "text/javascript";
-	newScript.src = config.url+"/feeds/posts/summary?alt=json-in-script&q="+val+"&max-results="+config.numPost+"&callback=showResult";
+	newScript.src = "/feeds/posts/summary?alt=json-in-script&q="+val+"&max-results="+config.numPost+"&callback=showResult";
 	// Remove the empty script that we crated before...
 	script.parentNode.removeChild(script);
 	// Then, insert a new script with the callback of showResult() fuunction based on the 'q' parameter value of input.value
