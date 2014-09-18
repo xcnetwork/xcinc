@@ -2,7 +2,7 @@
 
 function RecentThumbnail(json) {
 document.write('<div id="rc_label"><div class="rc_head"><h1>'+ LabelName +'</h1><span class="more_link"><a href="search/label/'+ LabelName +'?&amp;max-results=8">'+ LabelName +' '+ more +'</a></span></div><div class="viewport"><ul>');
-        for (var i = 0; i < numposts; i++) {
+        for (var i = 0; i < num_posts; i++) {
                 var entry = json.feed.entry[i],
                         title = entry.title.$t,
                         link, summ, months, cm, img;
@@ -29,4 +29,4 @@ document.write('<li><a href="' + link + '"><img src="'+ img +'"><h3>'+ title +'<
 document.write('</ul></div></div>');
 }
 
-document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/summary/" + (byLabels ? '-/' + LabelName : '') + "?max-results=" + numposts + "&orderby=published&alt=json-in-script&callback=RecentThumbnail'><\/scr" + "ipt>");
+document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/summary/" + (byLabels ? '-/' + LabelName : '') + "?max-results=" + num_posts + "&orderby=published&alt=json-in-script&callback=RecentThumbnail'><\/scr" + "ipt>");
