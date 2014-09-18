@@ -23,7 +23,7 @@ document.write('<div id="tinycarousel"><div id="tinyarrow"><a href="#"><img clas
                 summ = ("summary" in entry) ? entry.summary.$t.replace(/<(.*)?>/g, "") : "";
                 summ = (summ.length > numchars_g) ? summ.substring(0, numchars_g) + '&hellip;' : summ;
                 img = ('media$thumbnail' in entry) ? entry.media$thumbnail.url : pBlank;
-                img = img.replace(/\/s[0-9]+(\-c)?\//, "/'+ img_width + '/");
+                img = img.replace(/\/s[0-9]+(\-c)?\//, "/s230-c/");
                 months = (idMode) ? ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'] : ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
                 var date_a = date.split('-')[2].substring(0, 2),
                     date_b = date.split('-')[1],
