@@ -1,7 +1,4 @@
 // auto slider carousel custom
-function price() { var element = document.getElementById('harga');
-                  }
-
 function tinyCarouselGallery(json) {
 document.write('<div id="tinycarousel"><div id="tinyarrow"><a href="#"><img class="buttons prev" src="' + prevNav + '"/></a><a href="#"><img class="buttons next" src="' + nextNav + '"/></a><span>' + showText + '</span></div><div class="viewport"><ul class="overview">');
 
@@ -22,7 +19,7 @@ document.write('<div id="tinycarousel"><div id="tinyarrow"><a href="#"><img clas
                                 cm = entry.link[k].title.split(' ')[0];
                                 break;
                         }
-                }
+                }                              
                 summ = ("summary" in entry) ? entry.summary.$t.replace(/<(.*)?>/g, "") : "";
                 summ = (summ.length > numchars_g) ? summ.substring(0, numchars_g) + '&hellip;' : summ;
                 img = ('media$thumbnail' in entry) ? entry.media$thumbnail.url : pBlank;
@@ -31,6 +28,8 @@ document.write('<div id="tinycarousel"><div id="tinyarrow"><a href="#"><img clas
                 var date_a = date.split('-')[2].substring(0, 2),
                     date_b = date.split('-')[1],
                     date_c = date.split('-')[0];
+                    
+                var price = entry.getElementById('harga');
 					
 document.write('<li><div class="inner"><a href="' + link + '"' + (slideOpenNewTab ? ' target="_blank"' : '') + '><img id="promo" src="' + prImg + '"/><img src="' + img + '" alt="' + title + '" class="recent-thumb"></a><h3><a href="' + link + '"' + (slideOpenNewTab ? ' target="_blank"' : '') + '>' + title + '</a></h3><p>' + price + '</p></div>' + (showPostDate_g ? '<em>' + date_a + ' ' + months[parseInt(date_b, 10)-1] + ' ' + date_c + '</em>' : '') + (showComm_g ? '<em>' + cm + ' ' + text + '</em>' : '') + '</li>');
         }
