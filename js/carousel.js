@@ -5,7 +5,6 @@ document.write('<div id="tinycarousel"><div id="tinyarrow"><a href="#"><img clas
         for (var i = 0; i < numposts_g; i++) {
                 var entry = json.feed.entry[i],
                         title = entry.title.$t,
-                        price = entry.getElementById('harga').$t,
                         date = entry.published.$t,
                         link, summ, months, cm, img;
                 if (i == entry.length) break;
