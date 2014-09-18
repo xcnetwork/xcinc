@@ -29,7 +29,7 @@ document.write('<div id="tinycarousel"><div id="tinyarrow"><a href="#"><img clas
                     date_b = date.split('-')[1],
                     date_c = date.split('-')[0];
 					
-document.write('<li><div class="inner"><a href="' + link + '"' + (slideOpenNewTab ? ' target="_blank"' : '') + '><img id="promo" src="' + prImg + '"/><img src="' + img + '" alt="' + title + '" class="recent-thumb"></a><h3><a href="' + link + '"' + (slideOpenNewTab ? ' target="_blank"' : '') + '>' + title + '</a></h3><p>' + summ + ''+ price +'</p></div>' + (showPostDate_g ? '<em>' + date_a + ' ' + months[parseInt(date_b, 10)-1] + ' ' + date_c + '</em>' : '') + (showComm_g ? '<em>' + cm + ' ' + text + '</em>' : '') + '</li>');
+document.write('<li><div class="inner"><a href="' + link + '"' + (slideOpenNewTab ? ' target="_blank"' : '') + '><img id="promo" src="' + prImg + '"/><img src="' + img + '" alt="' + title + '" class="recent-thumb"></a><h3><a href="' + link + '"' + (slideOpenNewTab ? ' target="_blank"' : '') + '>' + title + '</a></h3><p>' + summ + '</p></div>' + (showPostDate_g ? '<em>' + date_a + ' ' + months[parseInt(date_b, 10)-1] + ' ' + date_c + '</em>' : '') + (showComm_g ? '<em>' + cm + ' ' + text + '</em>' : '') + '</li>');
         }
 document.write('</ul></div></div>');
 }
