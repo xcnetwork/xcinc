@@ -2,6 +2,7 @@
 
 function tinyCarouselGallery(json) {
 document.write('<div id="tinycarousel"><div id="tinyarrow"><a href="#"><img class="buttons prev" src="' + prevNav + '"/></a><a href="#"><img class="buttons next" src="' + nextNav + '"/></a><span>' + showText + '</span></div><div class="viewport"><ul class="overview">');
+
         for (var i = 0; i < numposts_g; i++) {
                 var entry = json.feed.entry[i],
                         title = entry.title.$t,
