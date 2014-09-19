@@ -29,4 +29,4 @@ document.write('<li><a href="' + link + '"><img src="'+ img +'"><h3>'+ title +'<
 document.write('</ul></div></div>');
 }
 
-document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/summary/" + (byLabels ? '-/' + LabelName : '') + "?max-results=" + num_posts + "&orderby=published&alt=json-in-script&callback=Terbaru'><\/scr" + "ipt>");
+document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/summary/" + (byLabels ? '-/' + label : '') + "?max-results=" + num_posts + "&orderby=published&alt=json-in-script&callback=Terbaru'><\/scr" + "ipt>");
