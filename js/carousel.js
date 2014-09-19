@@ -24,7 +24,7 @@ document.write('<div id="tinycarousel"><div id="tinyarrow"><a href="#"><img clas
                 summ = (summ.length > numchars_g) ? summ.substring(0, numchars_g) + '&hellip;' : summ;
                 img = ('media$thumbnail' in entry) ? entry.media$thumbnail.url : pBlank;
                 img = img.replace(/\/s[0-9]+(\-c)?\//, "/s230-c/");
-                var price = document.$('harga');
+                var price = document.getElementById('harga');
 					
 document.write('<li><div class="inner"><a href="' + link + '"' + (slideOpenNewTab ? ' target="_blank"' : '') + '><img id="promo" src="' + prImg + '"/><img src="' + img + '" alt="' + title + '" class="recent-thumb"></a><h3><a href="' + link + '"' + (slideOpenNewTab ? ' target="_blank"' : '') + '>' + title + '</a></h3><p>' + price + '</p></div>' + (showPostDate_g ? '<em>' + date_a + ' ' + months[parseInt(date_b, 10)-1] + ' ' + date_c + '</em>' : '') + (showComm_g ? '<em>' + cm + ' ' + text + '</em>' : '') + '</li>');
         }
