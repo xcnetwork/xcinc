@@ -22,7 +22,7 @@ document.write('<div id="rc_label"><div class="rc_head"><h1>'+ label +'</h1></di
                 summs = ("summary" in entry) ? entry.summary.$t.replace(/<(.*)?>/g, "") : "";
                 summs = (summs.length > numchars) ? summs.substring(0, numchars) + '&hellip;' : summs;
                 img = ('media$thumbnail' in entry) ? entry.media$thumbnail.url : 'http://xcinc.googlecode.com/svn/img/noimage.png';
-                img = img.replace(/\/s[0-9]+(\-c)?\//, "/s"+img_sz+");
+                img = img.replace(/\/s[0-9]+(\-c)?\//, "/s"+img_sz+"-c"");
                                         
 document.write('<li><a href="' + link + '"><img src="'+ img +'"><h3>'+ title +'</h3></a></li>');
         }
