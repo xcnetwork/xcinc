@@ -5,7 +5,7 @@ document.write('<div id="rc_label"><div class="rc_head"><h1>'+ label +'</h1></di
         for (var i = 0; i < num_posts; i++) {
                 var entry = json.feed.entry[i],
                         title = entry.title.$t,
-                        link, summs, months, cm, img;
+                        link, summs, cm, img;
                 if (i == entry.length) break;
                 for (var j = 0, jen = entry.link.length; j < jen; j++) {
                         if (entry.link[j].rel == 'alternate') {
