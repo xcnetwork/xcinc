@@ -6,7 +6,7 @@ document.write('<div id="tinycarousel"><div id="tinyarrow"><a href="#"><img clas
                 var entry = json.feed.entry[i],
                         title = entry.title.$t,
                         date = entry.published.$t,
-                        link, summ, months, cm, img;
+                        link, summ, cm, img;
                 if (i == entry.length) break;
                 for (var j = 0, jen = entry.link.length; j < jen; j++) {
                         if (entry.link[j].rel == 'alternate') {
@@ -24,11 +24,7 @@ document.write('<div id="tinycarousel"><div id="tinyarrow"><a href="#"><img clas
                 summ = (summ.length > numchars_g) ? summ.substring(0, numchars_g) + '&hellip;' : summ;
                 img = ('media$thumbnail' in entry) ? entry.media$thumbnail.url : pBlank;
                 img = img.replace(/\/s[0-9]+(\-c)?\//, "/s230-c/");
-                months = (idMode) ? ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'] : ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-                var date_a = date.split('-')[2].substring(0, 2),
-                    date_b = date.split('-')[1],
-                    date_c = date.split('-')[0],
-                    price = document.$('harga');
+                var price = document.$('harga');
 					
 document.write('<li><div class="inner"><a href="' + link + '"' + (slideOpenNewTab ? ' target="_blank"' : '') + '><img id="promo" src="' + prImg + '"/><img src="' + img + '" alt="' + title + '" class="recent-thumb"></a><h3><a href="' + link + '"' + (slideOpenNewTab ? ' target="_blank"' : '') + '>' + title + '</a></h3><p>' + price + '</p></div>' + (showPostDate_g ? '<em>' + date_a + ' ' + months[parseInt(date_b, 10)-1] + ' ' + date_c + '</em>' : '') + (showComm_g ? '<em>' + cm + ' ' + text + '</em>' : '') + '</li>');
         }
