@@ -24,7 +24,7 @@ document.write('<div id="rc_label"><div class="rc_head"><h1>'+ label +'</h1><spa
                 img = ('media$thumbnail' in entry) ? entry.media$thumbnail.url : 'http://xcinc.googlecode.com/svn/img/noimage.png';
                 img = img.replace(/\/s[0-9]+(\-c)?\//, "/s150-c/");
                                        
-document.write('<li><img src="'+ img +'"><h3>'+ title +'</h3><div class="detail"><a href="' + link + '">Details</a></div></li>');
+document.write('<li><img src="'+ img +'"><h3>'+ title +'</h3><p>'+ summ +'</p><div class="detail"><a href="' + link + '">Details</a></div></li>');
         }
 document.write('</ul></div></div>');
 }
