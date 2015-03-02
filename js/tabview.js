@@ -4,10 +4,3 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
 
 
-jQuery(document).ready(function() {
-
-	jQuery('#tabzine> ul').tabs({ fx: { height: 'toggle', opacity: 'toggle' } });
-
-
-
-});
