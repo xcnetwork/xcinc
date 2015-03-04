@@ -29,8 +29,8 @@
 
 #fancybox-loading div {width: 44px; height: 44px; background:url(http://xcinc.googlecode.com/svn/img/pageload.gif) 50% 50% no-repeat;}
 
-.fancybox-close, .fancybox-close:hover {display:block; background:url(http://xcinc.googlecode.com/svn/img/close.png) no-repeat; position:absolute; top:3px; right:5px; width:16px; height:16px; cursor:pointer; z-index:8040; opacity:0.6; -moz-opacity:0.6; filter: alpha(opacity =60)}
-.fancybox-close:hover{opacity: 0; -moz-opacity:0; filter: alpha(opacity =0)}
+.fancybox-close, .fancybox-close:hover {display:block; background:url(http://xcinc.googlecode.com/svn/img/close.png) no-repeat; position:absolute; top:5px; right:5px; width:16px; height:16px; cursor:pointer; z-index:8040; opacity:0.6; -moz-opacity:0.6; filter: alpha(opacity =60)}
+.fancybox-close:hover{display:block; opacity: 0; -moz-opacity:0; filter: alpha(opacity =0)}
 
 .fancybox-nav {position: absolute; top: 0; width: 40%; height: 100%; cursor: pointer; text-decoration: none; background:transparent url(http://xcinc.googlecode.com/svn/img/blank.gif); -webkit-tap-highlight-color: rgba(0,0,0,0); z-index: 8040;}
 
