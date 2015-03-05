@@ -27,5 +27,5 @@ document.write('<li><a href="' + link + '"><img src="'+ img +'"><h3>'+ title +'<
 document.write('</ul></div></div>');
 }
 
-document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/default?alt=json-in-script&orderby=published&callback=SearchThumbnail'><\/scr" + "ipt>");
+document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/summary/" + (byLabels ? '-/' + label : '') + "?max-results=" + num_posts + "&orderby=UPDATED&alt=json-in-script&callback=RecentThumbnail'><\/scr" + "ipt>");
 
