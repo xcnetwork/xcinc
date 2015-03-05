@@ -28,4 +28,4 @@ document.write('</ul></div></div>');
 }
 
 
-document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/summary/default?&orderby=UPDATED&alt=json-in-script&callback=SearchThumbnail'><\/scr" + "ipt>");
+document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/default?alt=json-in-script&orderby=published&callback=SearchThumbnail'><\/scr" + "ipt>");
