@@ -1,4 +1,4 @@
-function RecentThumbnail(json) {
+function SearchThumbnail(json) {
 document.write('<div id="rc_label"><div class="viewport"><ul>');
         for (var i = 0; i < num_posts; i++) {
                 var entry = json.feed.entry[i],
@@ -26,3 +26,6 @@ document.write('<li><a href="' + link + '"><img src="'+ img +'"><h3>'+ title +'<
         }
 document.write('</ul></div></div>');
 }
+
+
+document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/summary/default&orderby=UPDATED&alt=json-in-script&callback=SearchThumbnail'><\/scr" + "ipt>");
