@@ -29,4 +29,4 @@ document.write('<li><a href="' + link + '"><img src="'+ img +'"><h3>'+ title +'<
 document.write('</ul></div></div>');
 }
 
-document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/summary?&orderby=UPDATED&alt=json-in-script&callback=SearchThumbnail'><\/scr" + "ipt>");
+document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/summary/" + (byLabels ? '-/' + label : '') + "?max-results=" + num_posts + "&orderby=UPDATED&alt=json-in-script&callback=SearchThumbnail'><\/scr" + "ipt>");
