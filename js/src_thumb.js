@@ -1,9 +1,9 @@
 function SearchThumbnail(json) {
 document.write('<div id="rc_label"><div class="viewport"><ul>');
-        for (var i = 0; i < num_posts; i++) {
+        for (var i = 0; i < 1 i++) {
                 var entry = json.feed.entry[i],
                         title = entry.title.$t,
-                        link, summa, cm, img;
+                        link, summ, cm, img;
                 if (i == entry.length) break;
                 for (var j = 0, jen = entry.link.length; j < jen; j++) {
                         if (entry.link[j].rel == 'alternate') {
@@ -17,15 +17,15 @@ document.write('<div id="rc_label"><div class="viewport"><ul>');
                                 break;
                         }
                 }
-                summa = ("summary" in entry) ? entry.summary.$t.replace(/<(.*)?>/g, "") : "";
-                summa = (summa.length > numchars) ? summa.substring(0, numchars) + '&hellip;' : summa;
+                summ = ("summary" in entry) ? entry.summary.$t.replace(/<(.*)?>/g, "") : "";
+                summ = (summ.length > numchars) ? summ.substring(0, numchars) + '&hellip;' : summ;
                 img = ('media$thumbnail' in entry) ? entry.media$thumbnail.url : 'http://xcinc.googlecode.com/svn/img/noimage.png';
                 img = img.replace(/\/s[0-9]+(\-c)?\//, "/s150-c/");
                                        
-document.write('<li><a href="' + link + '"><img src="'+ img +'"><h3>'+ title +'</h3></a><p>'+ summa +'</p></li>');
+document.write('<li><a href="' + link + '"><img src="'+ img +'"><h3>'+ title +'</h3></a><p>'+ summ +'</p></li>');
         }
 document.write('</ul></div></div>');
 }
 
 
-document.write("<scr" + "ipt type='text/javascript' src='/feeds/posts/default?alt=json-in-script&orderby=published&callback=SearchThumbnail'><\/scr" + "ipt>");
+
