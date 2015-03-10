@@ -13,7 +13,7 @@ var config = searchFormConfig,
 function showResult(json) {
         var entry = json.feed.entry ? json.feed.entry : "", url, summary, img;
         skeleton  = '<h4>' + config.resultTitle + ' &quot;' + input.value + '&quot;</h4>';
-        skeleton += '<a title="Close" style="display:block;position:absolute;top:8px;right:10px;line-height:normal;text-decoration:none;color:inherit;font-size:150%;" href="#close" onclick="resultContainer.style.display=\'none\';return false;">&times;</a><ol>';
+        skeleton += '<a title="Close" style="display:block;position:absolute;top:8px;right:10px;line-height:normal;text-decoration:none;color:inherit;font-size:150%;" href="#close" onclick="resultContainer.style.display=\'none\';return false;"><img src="http://xcinc.googlecode.com/svn/img/close.png"/></a><ol>';
         if (entry === "") {
                 skeleton += '<li>' + config.noResult + '</li>';
         }
