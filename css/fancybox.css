@@ -10,7 +10,7 @@
 .fancybox-nav span,
 .fancybox-tmp{padding: 0; margin: 0; border: 0;	outline: none; vertical-align: top}
 
-.fancybox-wrap {position: absolute;  top: 0;	left: 0; z-index: 8020; opacity:0.9; -moz-opacity:0.9; filter: alpha(opacity =90)}
+.fancybox-wrap {position: absolute;  top: 0;	left: 0; z-index: 8020}
 .fancybox-skin {position: relative;  background: #f9f9f9; color: #444; text-shadow: none; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;}
 
 .fancybox-opened {z-index: 8030;}
@@ -45,7 +45,7 @@
 
 /* Overlay helper */
 .fancybox-lock {overflow: hidden;}
-.fancybox-overlay {position:absolute; top:0; left:0; opacity:0.6; -moz-opacity:0.6; filter: alpha(opacity =60)overflow: hidden; display: none; z-index: 99999; background:#222}
+.fancybox-overlay {position:absolute; top:0; left:0; overflow: hidden; display: none; z-index: 99999; background:url(http://xcinc.googlecode.com/svn/img/overlay.png) no-repeat 0 0}
 .fancybox-overlay-fixed {position: fixed; bottom: 0; right: 0;}
 .fancybox-lock .fancybox-overlay {overflow: auto; overflow-y: scroll;}
 
