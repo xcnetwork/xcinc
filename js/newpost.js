@@ -1,7 +1,7 @@
 // Recent Post Thumbnail
 
 function RecentThumbnail(json) {
-document.write('<div id="rc_label"><div class="rc_head"><h1>'+ judul +'</h1><span class="more_link"><a href="search/label/updated?&amp;max-results=15">Lihat Semua</a></span></div><div class="viewport"><ul>');
+document.write('<div id="rc_label"><div class="rc_head"><h1>'+ judul +'</h1><span class="more_link"><a href="search/label/updated?&amp;max-results=15">'+ more +'</a></span></div><div class="viewport"><ul>');
         for (var i = 0; i < num_posts; i++) {
                 var entry = json.feed.entry[i],
                         title = entry.title.$t,
